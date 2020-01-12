@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">css_545_hello_world</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Hello World Home</string>
+    <string name="title_dashboard">Hello Dash</string>
+    <string name="title_notifications">Hello Notify</string>
 </resources>
