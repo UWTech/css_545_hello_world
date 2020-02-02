@@ -1,6 +1,7 @@
 package com.example.css_545_hello_world;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -27,4 +28,15 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
     }
 
+    public void saveSettings(View view) {
+    }
+
+    public void loadSettings(View view) {
+    }
+
+    public void saveMedia(View view){
+    }
+
+    public void loadMedia(View view){
+    }
 }

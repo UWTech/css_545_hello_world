@@ -3,4 +3,8 @@
     <string name="title_home">Hello World Home</string>
     <string name="title_dashboard">Hello Dash</string>
     <string name="title_notifications">Hello Notify</string>
+    <string name="save_settings_button">Save Settings</string>
+    <string name="save_media_button">Save Media</string>
+    <string name="load_settings_button">Load Settings</string>
+    <string name="load_media_button">Load Media</string>
 </resources>
