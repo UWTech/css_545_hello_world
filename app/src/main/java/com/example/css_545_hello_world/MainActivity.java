@@ -1,5 +1,8 @@
 package com.example.css_545_hello_world;
 
+import com.example.css_545_hello_world.MediaManager;
+import com.example.css_545_hello_world.SettingsManager;
+
 import android.os.Bundle;
 import android.view.View;
 
@@ -29,14 +32,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void saveSettings(View view) {
+        SettingsManager.saveSettings();
     }
 
     public void loadSettings(View view) {
+        SettingsManager.loadSettings();
     }
 
     public void saveMedia(View view){
+        MediaManager.saveMedia();
     }
 
     public void loadMedia(View view){
+        MediaManager.loadMedia();
     }
 }

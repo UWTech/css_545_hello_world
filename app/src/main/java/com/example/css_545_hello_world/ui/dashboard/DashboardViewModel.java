@@ -10,7 +10,7 @@ public class DashboardViewModel extends ViewModel {
 
     public DashboardViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("You've navigated to the Dashboards page using the app's icon");
+        mText.setValue("You've navigated to the Media Storage Demo Page");
     }
 
     public LiveData<String> getText() {

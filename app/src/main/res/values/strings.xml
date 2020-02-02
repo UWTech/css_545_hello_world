@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">css_545_hello_world</string>
-    <string name="title_home">Hello World Home</string>
-    <string name="title_dashboard">Hello Dash</string>
+    <string name="app_name">CSS_545_Storage_Demo</string>
+    <string name="title_home">Settings Save and Load</string>
+    <string name="title_dashboard">Media Save and Load</string>
     <string name="title_notifications">Hello Notify</string>
     <string name="save_settings_button">Save Settings</string>
     <string name="save_media_button">Save Media</string>
