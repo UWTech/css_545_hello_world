@@ -1,4 +1,4 @@
-package com.example.css_545_hello_world;
+package com.example.css_545_hello_world.MediaManagement;
 
 public class MediaManager {
 

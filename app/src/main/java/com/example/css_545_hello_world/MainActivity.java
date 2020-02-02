@@ -1,8 +1,9 @@
 package com.example.css_545_hello_world;
 
-import com.example.css_545_hello_world.MediaManager;
-import com.example.css_545_hello_world.SettingsManager;
+import com.example.css_545_hello_world.MediaManagement.MediaManager;
+import com.example.css_545_hello_world.SettingsManagement.SettingsManager;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home, R.id.navigation_dashboard)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
@@ -32,11 +33,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void saveSettings(View view) {
-        SettingsManager.saveSettings();
+        Context context = App.context;
+        SettingsManager.saveSettings(context);
     }
 
     public void loadSettings(View view) {
-        SettingsManager.loadSettings();
+        Context context = App.context;
+
+        SettingsManager.loadSettings(context);
     }
 
     public void saveMedia(View view){
