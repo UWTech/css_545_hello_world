@@ -6,6 +6,7 @@ import com.example.css_545_hello_world.SettingsManagement.SettingsManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
     public void loadMedia(View view){
         try {
             Bitmap bitmap = MediaManager.loadMedia();
+            ImageView imageView = findViewById(R.id.demo_view);
+            imageView.setImageBitmap(bitmap);
         } catch (Exception e) {
             System.out.println("failed to replace naviagtion icon");
             throw e;
