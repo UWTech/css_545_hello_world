@@ -3,17 +3,24 @@ package com.example.css_545_hello_world;
 import com.example.css_545_hello_world.MediaManagement.MediaManager;
 import com.example.css_545_hello_world.SettingsManagement.SettingsManager;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,11 +50,17 @@ public class MainActivity extends AppCompatActivity {
         SettingsManager.loadSettings(context);
     }
 
-    public void saveMedia(View view){
-        MediaManager.saveMedia();
+    public void saveMedia(View view) throws IOException {
+        Context context = App.context;
+        MediaManager.saveMedia(context);
     }
 
     public void loadMedia(View view){
-        MediaManager.loadMedia();
+        try {
+            Bitmap bitmap = MediaManager.loadMedia();
+        } catch (Exception e) {
+            System.out.println("failed to replace naviagtion icon");
+            throw e;
+        }
     }
 }
