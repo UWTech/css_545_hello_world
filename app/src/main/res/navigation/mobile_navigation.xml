@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.css_545_hello_world.ui.home.SettingsFragment"
+        android:name="com.example.css_545_hello_world.ui.settings.SettingsFragment"
         android:label="@string/title_home"
         tools:layout="@layout/settings" />
 

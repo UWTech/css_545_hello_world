@@ -1,4 +1,4 @@
-package com.example.css_545_hello_world.ui.home;
+package com.example.css_545_hello_world.ui.settings;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
