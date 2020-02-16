@@ -28,17 +28,13 @@ public class SettingsManager {
         }
     }
 
-    static public boolean loadSettings(Context context) {
+    static public String loadSettings(Context context) {
         try {
             SharedPreferences userDetails = context.getSharedPreferences("userdetails", Context.MODE_PRIVATE);
             // retrieve the username, and confirm it matches the constant from this class, else throw an exception
 
             String savedUsername = userDetails.getString(usernameKey,"");
-
-            if (!savedUsername.equals(username)) {
-                return false;
-            }
-            return true;
+            return savedUsername;
         }
         catch (Exception e) {
             System.out.println("exception during load settings");

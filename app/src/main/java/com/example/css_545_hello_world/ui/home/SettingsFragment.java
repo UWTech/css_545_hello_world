@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.css_545_hello_world.R;
 
-public class HomeFragment extends Fragment {
+public class SettingsFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private SettingsViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+                ViewModelProviders.of(this).get(SettingsViewModel.class);
+        View root = inflater.inflate(R.layout.settings, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
